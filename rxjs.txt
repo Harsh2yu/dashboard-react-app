@@ -1,0 +1,17 @@
+1. Observable
+2. Subscription
+3. Rxjs Operators (map)
+
+API call (promise) -> then 
+API call (Observable) -> subscribe
+map operator
+
+2 -> 4
+3 -> 6
+4 -> 8
+5 -> 10
+
+take(1);
+skip(1)
+
+sudo npm i rxjs

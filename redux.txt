@@ -1,0 +1,115 @@
+Actions 
+
+LOAD_PRODUCTS
+ADD_PRODUCT
+REMOVE_PRODUCT
+
+Reducers
+
+function products(state = {}, action){
+    action.type  
+    case LOAD_PRODUCTS
+    // logic 
+    state = {products}
+    return state;
+
+    case ADD_PRODUCT
+    // logic [ products, newProduct ] 
+    return ...state;
+
+    case REMOVE_PRODUCT
+    // logic 
+    return state
+}
+
+
+function comments(state = {}, action){
+    action.type  
+    case LOAD_PRODUCTS
+    // logic 
+    state = {products}
+    return ...state;
+
+    case ADD_PRODUCT
+    // logic [ products, newProduct ] 
+    return ...state;
+
+    case REMOVE_PRODUCT
+    // logic 
+    return state
+}
+
+const rootReducer = combineReducers({products, comments})
+
+state = [
+    {
+        id: 1
+    },
+    {
+        comment: 1
+    }
+]
+
+Store 
+
+View 
+
+Component     
+
+
+dispatch action - LOAD_PRODUCTS
+dispatch action - ADD_PRODUCT - will pass data
+dispatch action - REMOVE_PRODUCT - will pass data - 1
+
+dispatch action - LOAD_COMMENTS
+
+const store = createStore(reducer)
+
+Mac & Linux
+
+sudo npm install redux@3.7.2
+sudo npm install react-redux@5.0.6
+
+Windows 
+
+npm install redux@3.7.2
+npm install react-redux@5.0.6
+
+
+Redux DevTools
+https://chrome.google.com/webstore/detail/redux-devtools/lmhkpmbekcpmknklioeibfkpmmfibljd?hl=en
+
+
+Recap 
+
+Installation for React Redux and Redux DevTools
+Redux 
+    Actions - 3 - LOAD_PRODUCTS, ADD_PRODUCT and REMOVE_PRODUCT
+    Reducer - function(state, action) - state = {}
+
+Component 
+    this.props.dispatch(removeProduct(2)); // calling action 
+
+calling action -> reducer -> using in component
+removeProduct action -> reducer (changes inside the state) -> getting state value in component
+
+App.js (Redux configuration on component level)
+------------------------------------------------
+
+mapStateToProps, Router
+
+mapDispatchToProps
+
+index.js -> (import App.js)
+---------------------------
+import App from './App';
+
+const store = createStore(productReducer)
+<Provider store={store}><BrowserRouter><App /></BrowserRouter></Provider>
+
+Created store 
+Added reducer
+Redux DevTools
+
+
+

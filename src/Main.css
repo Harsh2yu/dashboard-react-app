@@ -1,0 +1,21 @@
+.product-title {
+  color: green;
+  background-color: yellowgreen;
+  padding: 10px;
+  font-family: Arial;
+}
+
+.productTitle {
+  color: green;
+  background-color: yellowgreen;
+  padding: 10px;
+  font-family: Arial;
+}
+
+h1 {
+  color: green;
+}
+
+h3 {
+  color: yellow;
+}
